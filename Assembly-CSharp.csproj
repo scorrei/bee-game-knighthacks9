@@ -43,7 +43,6 @@
     <UnityVersion>6000.6.3f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Users\sam\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.3.2\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.6.3f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.6.3f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.6.3f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
@@ -56,6 +55,7 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\BeePathfinding.cs" />
     <Compile Include="Assets\Free 2D Cartoon Parallax Background\Demo\Script\BackgroundControl_0.cs" />
+    <Compile Include="Assets\Scripts\PlayerController_Teleport.cs" />
     <Compile Include="Assets\Free 2D Cartoon Parallax Background\Demo\Script\ParallaxBackground_0.cs" />
   </ItemGroup>
   <ItemGroup>

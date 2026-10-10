@@ -17,7 +17,7 @@ public class BeePathfinding : MonoBehaviour
         
     }
 
-    public void moveBee(UnityEngine.Vector2 mousePosition)
+    public void moveBee(UnityEngine.Vector3 mousePosition)
     {
         this.transform.position = mousePosition;
         Debug.Log("Position changed to " + mousePosition);

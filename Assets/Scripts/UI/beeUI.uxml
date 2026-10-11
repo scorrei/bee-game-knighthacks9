@@ -1,6 +1,6 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/Scripts/UI/beeUI.uss?fileID=7433441132597879392&amp;guid=abf3a8ae16e8fc64d9af8476df707b15&amp;type=3#beeUI"/>
-    <ui:VisualElement name="Panel" class="panel" style="flex-grow: 1; background-color: rgba(38, 37, 37, 0.467); aspect-ratio: auto; max-width: 300px; max-height: 100px; align-self: auto; translate: 10% 350%; justify-content: flex-end; border-top-width: 5px; border-right-width: 5px; border-left-width: 5px; -unity-text-align: upper-left; padding-bottom: 5px;">
-        <ui:Button text="LAND" name="Land"/>
+    <ui:VisualElement name="Panel" class="panel" style="flex-grow: 1; background-color: rgba(38, 37, 37, 0.467); aspect-ratio: auto; max-width: 300px; max-height: 100px; align-self: auto; translate: 10% 545%; justify-content: flex-end; border-top-width: 5px; border-right-width: 5px; border-left-width: 5px; -unity-text-align: upper-left; padding-bottom: 5px; position: relative; bottom: auto; flex-direction: column;">
+        <ui:Button text="LAND" name="Land" style="position: relative;"/>
     </ui:VisualElement>
 </ui:UXML>

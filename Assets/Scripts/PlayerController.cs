@@ -36,5 +36,5 @@ public class PlayerController : MonoBehaviour
             targetPosition = new Vector3(relativePosition.x, relativePosition.y, transform.position.z);
         }
     }
-    
+
 }

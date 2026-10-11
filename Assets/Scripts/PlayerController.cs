@@ -1,6 +1,7 @@
 using System;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
@@ -36,25 +37,31 @@ public class PlayerController : MonoBehaviour
         
         //if (mousePosition.x < 900 && mousePosition.x > 0 && mousePosition.y < 500 && mousePosition.y > 0) //bound click range
         //{
-        Debug.Log("mouse: " + mousePosition.x + ", " + mousePosition.y + ", " + mousePosition.z);
-        
-        
-
-
-
-        mousePosition.z = Mathf.Abs(Camera.main.transform.position.z);
-        Vector3 relativePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-    
-        targetPosition = new Vector3(relativePosition.x, relativePosition.y, transform.position.z);
-        barnabee.drawMode = SpriteDrawMode.Sliced;
-        //flip barnabee
-        if (targetPosition.x - transform.position.x > 0)
+        if (Mouse.current.leftButton.wasPressedThisFrame)
         {
-            barnabee.flipX = true;
-        }
-        else
-        {
-            barnabee.flipX = false;
+            if(!EventSystem.current.IsPointerOverGameObject())
+            {
+                Debug.Log("mouse: " + mousePosition.x + ", " + mousePosition.y + ", " + mousePosition.z);
+                
+                
+
+
+
+                mousePosition.z = Mathf.Abs(Camera.main.transform.position.z);
+                Vector3 relativePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+            
+                targetPosition = new Vector3(relativePosition.x, relativePosition.y, transform.position.z);
+                barnabee.drawMode = SpriteDrawMode.Sliced;
+                //flip barnabee
+                if (targetPosition.x - transform.position.x > 0)
+                {
+                    barnabee.flipX = true;
+                }
+                else
+                {
+                    barnabee.flipX = false;
+                }
+            }
         }
        // }
     }
